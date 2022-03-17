@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS (added bootstrap learning what I have this week)-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Leo - Code Quiz</title>
+</head>
+
+
+
+<body>
+    <div class="mt-5 container">
+        <div class="row">
+            <button type="button" class="btn btn-primary btn-lg" id="viewHScores">View HighScores</button>
+            <div class="col-md-2 ml-auto h2">Time left: <span id="timer">0</span></div>
+        </div>
+    </div>
+
+    <!-- end header 
+    
+    Structures out the area for the main menu-->
+
+    <div class="container mt-3">
+        <div class="pen pen-fluid text-center">
+
+            <!-- Main area  -->
+            <div class="container" id="welcome">
+                <h1 class="h1 mb-4 text-success">Leo's Coding Quiz</h1>
+                <p class="h2 mb-4 text-info">Try to answer the following code-related questions with the time limit.</p>
+                <button type="button" class="btn btn-primary btn-lg btn-block" id="startQuiz">Start Quiz</button>
+            </div>
+
+
+
+            <!-- quiz -->
+            <div class="container" id="quiz">
+                <h1 class="h1 mb-4" id="question"></h1>
+                <div class="container" id="answers">
+                    <div class="row">
+                        <button type="button" class="btn btn-primary btn-lg btn-block mb-3 text-center font-weight-bold" id="0"></button>
+                    </div>
+                    <div class="row">
+                        <button type="button" class="btn btn-warning btn-lg btn-block mb-3 text-center font-weight-bold" id="1"></button>
+                    </div>
+                    <div class="row">
+                        <button type="button" class="btn btn-info btn-lg btn-block mb-3 text-center font-weight-bold" id="2"></button>
+                    </div>
+                    <div class="row">
+                        <button type="button" class="btn btn-danger btn-lg btn-block mb-3 text-center font-weight-bold" id="3"></button>
+                    </div>
+                </div>
+            </div>
+
+        <!-- This is the other screens. just highscores & input-->
+            <div class="container" id="highScores">
+                <h1 class="h1 mb-4 font-weigth-bold">Highscores</h1>
+                <div class="container h4 mb-4" id="scores">
+                </div>
+                <button type="button" class="btn btn-primary btn-lg" id="goBack">Go Back</button>
+                <button type="button" class="btn btn-primary btn-lg" id="clearScores">Clear Scores</button>
+            </div>
+            <div class="container" id="inputScore">
+                <h1 class="h1 mb-4">All done!</h1>
+                <p class="h2 mb-4">Score: <span id="score"></span></p>
+                <p class="h2 mb-4">What is your name champion?<input type="text " id="initials"></p>
+                <button type="button" class="btn btn-primary btn-lg" id="submitName">Submit</button>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- end main area -->
+
+
+    <!-- JavaScript -->
+      <script src="assets/js/questions.js"></script>
+       <script src="assets/js/code-quiz.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+    </body>
+</html>

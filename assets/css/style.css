@@ -1,0 +1,19 @@
+#welcome, #quiz, #inputScore, #highScores {
+    width: 70%;
+}
+
+#quiz, #inputScore, #highScores {
+    display: none;
+}
+
+.row{
+    color: blue;
+}
+
+.row:hover {
+    color: purple;
+}
+
+.pen {
+    background-color: white;
+}
