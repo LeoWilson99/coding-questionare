@@ -24,3 +24,7 @@ Depends
 #### What technologies are used to create this amazing piece of engineering?
 
 HTML, CSS & JS
+
+## known Issues
+
+- I broke the highscores as the text is white on white / it's not rendering.
